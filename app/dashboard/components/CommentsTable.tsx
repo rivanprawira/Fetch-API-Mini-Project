@@ -10,7 +10,6 @@ const cardContainer = `
   w-full
   max-w-full
   rounded-[13px]
-  max-h-[clamp(390px,30vw,580px)]
   overflow-x-auto
   overflow-y-auto
   relative
@@ -85,6 +84,8 @@ export default function CommentsTable({ data, onDelete }: CommentsTableProps) {
         value={data}
         className={tableClass}
         tableStyle={{ minWidth: "100%" }}
+        scrollable
+        scrollHeight="clamp(390px,30vw,580px)"
         emptyMessage={
           <span className="text-[clamp(12px,2vw,22px)] mx-[clamp(5px,1vw,14px)]">
             No comments yet

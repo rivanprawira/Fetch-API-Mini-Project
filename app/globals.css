@@ -21,15 +21,15 @@
 
 @layer components {
   .custom-paginator {
-    @apply flex items-center justify-center gap-2 py-3;
+    @apply flex items-center justify-center gap-[clamp(5px,1vw,14px)] py-3;
   }
 
   .custom-paginator [data-pc-section="pagebutton"] {
     @apply min-w-10 h-10
-           inline-flex items-center justify-center gap-2
+           inline-flex items-center justify-center
            bg-[#F7EBD5]
            rounded-[15px]
-           text-[clamp(14px,1.6vw,20px)]
+           text-[clamp(12px,2vw,22px)]
            cursor-pointer
            transition
            hover:bg-[#EED7A6];
@@ -47,7 +47,7 @@
   .custom-paginator [data-pc-section="prevpagebutton"],
   .custom-paginator [data-pc-section="nextpagebutton"],
   .custom-paginator [data-pc-section="lastpagebutton"] {
-    @apply min-w-10 h-10
+    @apply min-w-[clamp(20px,4vw,40px)] h-[clamp(20px,4vw,40px)]
            flex items-center justify-center
            bg-[#F7EBD5]
            rounded-[15px]
