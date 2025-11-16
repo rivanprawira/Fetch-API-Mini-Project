@@ -35,14 +35,6 @@
            hover:bg-[#EED7A6];
   }
 
-  /* PAGE LINK aktif (current page) */
-  .custom-paginator [data-pc-section="pagebutton"][data-p-highlight="true"],
-  .custom-paginator [data-pc-section="pagebutton"][aria-current="page"] {
-    @apply bg-[#EED7A6]
-           border-[#9B9381]
-           text-black;
-  }
-
   .custom-paginator [data-pc-section="firstpagebutton"],
   .custom-paginator [data-pc-section="prevpagebutton"],
   .custom-paginator [data-pc-section="nextpagebutton"],
