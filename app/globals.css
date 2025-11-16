@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import "primeicons/primeicons.css";
+
+.login-page {
+  @apply min-h-screen flex items-center justify-center p-4;
+
+  background-image: url(/login-background.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dashboard-page {
+  @apply min-h-screen flex flex-col items-center justify-start p-4;
+
+  background: linear-gradient(180deg, #76d2fa 24%, #cfebf7 39%);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+@layer components {
+  .custom-paginator {
+    @apply flex items-center justify-center gap-2 py-3;
+  }
+
+  .custom-paginator [data-pc-section="pagebutton"] {
+    @apply min-w-10 h-10
+           inline-flex items-center justify-center gap-2
+           bg-[#F7EBD5]
+           rounded-[15px]
+           text-[clamp(14px,1.6vw,20px)]
+           cursor-pointer
+           transition
+           hover:bg-[#EED7A6];
+  }
+
+  /* PAGE LINK aktif (current page) */
+  .custom-paginator [data-pc-section="pagebutton"][data-p-highlight="true"],
+  .custom-paginator [data-pc-section="pagebutton"][aria-current="page"] {
+    @apply bg-[#EED7A6]
+           border-[#9B9381]
+           text-black;
+  }
+
+  .custom-paginator [data-pc-section="firstpagebutton"],
+  .custom-paginator [data-pc-section="prevpagebutton"],
+  .custom-paginator [data-pc-section="nextpagebutton"],
+  .custom-paginator [data-pc-section="lastpagebutton"] {
+    @apply min-w-10 h-10
+           flex items-center justify-center
+           bg-[#F7EBD5]
+           rounded-[15px]
+           cursor-pointer
+           transition
+           hover:bg-[#EED7A6];
+  }
+}
