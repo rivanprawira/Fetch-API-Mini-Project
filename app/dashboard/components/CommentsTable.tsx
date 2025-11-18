@@ -1,5 +1,3 @@
-"use client";
-
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import type { Comment } from "../fetchData";

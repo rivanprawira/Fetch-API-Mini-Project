@@ -1,5 +1,3 @@
-"use client";
-
 const styles = {
   input: `
     w-full
