@@ -25,7 +25,7 @@ const styles = {
     rounded-[13px]
     bg-[#71AFF9]
     px-4
-    h-[56px] md:h-[95px]
+    h-[clamp(56px,8vw,95px)]
     text-[clamp(20px,2vw,26px)]
     outline-none
     border-2 border-transparent

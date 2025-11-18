@@ -15,7 +15,7 @@ const styles = {
     rounded-[28px]
     shadow-md
     px-8 py-8
-    w-[clamp(286px,80vw,640px)]
+    w-[clamp(286px,60vw,640px)]
     flex flex-col gap-6
   `,
   title: `
@@ -23,7 +23,7 @@ const styles = {
     text-[clamp(45px,6vw,96px)]
   `,
   buttonsRow: `
-    flex flex-col gap-2 w-full
+    flex flex-col pt-[clamp(25px,4vw,40px)] w-full
   `,
   submitButton: `
     rounded-[13px]
