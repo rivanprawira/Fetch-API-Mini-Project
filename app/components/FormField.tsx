@@ -1,5 +1,3 @@
-import { useId } from "react";
-
 type FormFieldProps = {
   label: string;
   type?: string;
@@ -42,20 +40,15 @@ export default function FormField({
   error,
   onChange,
 }: FormFieldProps) {
-  const id = useId();
-
   return (
     <div className={styles.wrapper}>
       <div className={styles.headerRow}>
-        <label htmlFor={id} className={styles.label}>
-          {label}
-        </label>
+        <label className={styles.label}>{label}</label>
 
         {error && <p className={styles.error}>*{error}</p>}
       </div>
 
       <input
-        id={id}
         type={type}
         className={styles.input}
         value={value}
