@@ -1,5 +1,3 @@
-"use client";
-
 import { PrimeReactProvider } from "primereact/api";
 
 type Props = {
