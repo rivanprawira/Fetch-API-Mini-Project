@@ -24,7 +24,6 @@ const rowStyle = `
 const columnHeader = `
   bg-[#EED7A6]
   border-b border-[#9B9381]
-  text-center
   text-[clamp(18px,2vw,24px)]
   h-[clamp(30px,4vw,54px)]
   min-w-40
@@ -33,7 +32,7 @@ const columnHeader = `
 
 const columnCell = `
   text-[clamp(12px,2vw,22px)]
-  text-left 
+  text-justify
   px-3
 `;
 
@@ -47,15 +46,12 @@ const actionButton = `
   px-3 py-1
   bg-red-500/80
   hover:bg-red-600
-  outline-none
-  border-none
-  ring-0
   transition
 `;
 
 const columnsConfig = [
-  { field: "name", header: "Name", width: "20%" },
-  { field: "email", header: "Email", width: "25%" },
+  { field: "name", header: "Name", width: "25%" },
+  { field: "email", header: "Email", width: "20%" },
   { field: "body", header: "Comment", width: "45%" },
 ];
 
