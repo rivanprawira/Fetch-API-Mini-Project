@@ -6,7 +6,6 @@ const cardContainer = `
   bg-[#F7EBD5]
   border border-[#9B9381]
   w-full
-  max-w-full
   rounded-[13px]
   overflow-x-auto
   overflow-y-auto
