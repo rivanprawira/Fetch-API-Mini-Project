@@ -36,7 +36,6 @@ const styles = {
     hover:text-black
     cursor-pointer
     text-[clamp(20px,3vw,26px)]
-    leading-none
   `,
   fieldWrapper: `
     relative
