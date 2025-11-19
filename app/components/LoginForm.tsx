@@ -34,8 +34,6 @@ const styles = {
     hover:bg-[#497AB6]
     outline-none
     border-none
-    ring-0
-    transition
   `,
 };
 
