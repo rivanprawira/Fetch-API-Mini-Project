@@ -28,6 +28,7 @@ const columnHeader = `
   text-[clamp(18px,2vw,24px)]
   h-[clamp(30px,4vw,54px)]
   min-w-40
+  px-3
 `;
 
 const columnCell = `
