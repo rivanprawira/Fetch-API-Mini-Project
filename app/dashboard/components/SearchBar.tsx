@@ -3,7 +3,7 @@ const styles = {
     w-full
     rounded-[10px]
     bg-[#F3E6C9]/60
-    px-4 pr-10
+    px-4 
     h-[clamp(41px,4vw,50px)]
     text-[clamp(18px,4vw,24px)]
     placeholder:text-black/40
@@ -29,7 +29,6 @@ const styles = {
     ring-0
     border-none
     hover:bg-[#F3E6C9]
-    transition
   `,
   clearIcon: `
     absolute right-3 top-1/2 -translate-y-1/2
